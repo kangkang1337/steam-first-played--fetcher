@@ -1,0 +1,26 @@
+# secrets / local config
+.env.local
+.env.*.local
+
+# dependencies / build output
+node_modules/
+dist/
+.npm-cache/
+.tmp/
+
+# fetched raw data may contain private account info
+data/*
+!data/raw/
+data/raw/*
+!data/raw/.gitkeep
+
+# generated exports / reports
+exports/*
+!exports/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# misc
+*.log
+.DS_Store
+Thumbs.db

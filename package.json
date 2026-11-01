@@ -1,0 +1,26 @@
+{
+  "name": "steam-first-play-fetcher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent Steam first-play history fetcher (probe / fetch / report / export).",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --test-isolation=none \"tests/*.test.ts\"",
+    "probe": "node src/cli.ts probe",
+    "fetch": "node src/cli.ts fetch",
+    "report": "node src/cli.ts report",
+    "export": "node src/cli.ts export"
+  },
+  "dependencies": {
+    "undici": "^7.30.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3"
+  }
+}
